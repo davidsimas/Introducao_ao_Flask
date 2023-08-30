@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Básico</title>
+</head>
+<body>
+    <h1>Este é um Template de exemplo</h1>
+    <h3>A variável que passei é {{ myvar }}</h3>
+
+    <h2>Exemplo do IF</h2>
+    {% if myvar > 5 %}
+        <h3>A variável {{ myvar }} é maior do que 5</h3>
+    {% else %}
+        <h3>A variável {{ myvar }} é menor do que 5</h3>
+    {% endif %}
+
+    <h2>Exemplo do FOR</h2>
+    {% for link in links %}
+        <ul>
+            <li><a href="{{ link }}">Aqui está um link</a></li>
+        </ul>
+    {% endfor %}
+
+</body>
+</html>
